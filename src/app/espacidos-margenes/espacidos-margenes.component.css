@@ -1,0 +1,25 @@
+@media (min-width: 576px) {
+    .column{
+        background: red;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .column{
+        background: rgb(28, 0, 128);
+    }
+}
+
+@media (min-width: 992px) {
+    .column{
+        background: green;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .column{
+        background: yellow;
+    }
+}

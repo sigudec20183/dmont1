@@ -1,0 +1,18 @@
+<div class="container">
+    <div><h1>{{tituloTematicasSIG}}</h1></div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+        <div *ngFor="let temaSIG of tematicasSIG"> 
+            <div class="card" style="width: 18rem;">
+                <img src="{{temaSIG.imagenPath}}" alt="{{temaSIG.nombre}}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{temaSIG.nombre}}</h5>
+                    <p class="card-text">{{temaSIG.descripcion}}</p>
+                    <a href="#" class="btn btn-primary"> Ver ({{temaSIG.puntaje}}) </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

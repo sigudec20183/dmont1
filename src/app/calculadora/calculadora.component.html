@@ -1,0 +1,16 @@
+<div class="containet text-center">
+    <h1>Sistemas de Información Geografica {{tituloSIG}}</h1>
+    <img class="img-fluid" [src]="imagenSIG">
+    <h2>{{contadorTotal}}</h2>
+    <button type="button" class="btn btn-outline-success" (click)="sumar()">
+        Sumar +1
+        <span class="badge badge-light">{{suma}}</span>
+    </button>
+    <button type="button" class="btn btn-outline-danger btn-block" (click)="restar()">
+        Restar -1
+        <span class="badge badge-light">{{resta}}</span>
+    </button>
+    <input [value]="texto" (input)="texto = $event.target.value">
+    <button type="button" class="btn btn-outline-dark btn-block"
+    (click)="reset()">Restar a {{texto}}</button>
+</div>
